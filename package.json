@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "sass": "^1.79.4"
+  },
+
+  "scripts": {
+    "build-css": "npm run sass && npm run prefix",
+    "sass": "sass --watch ./sass/styles.scss:./public_html/view/css/styles.css --style compressed",
+    "prefix": "postcss ./public_html/view/css/styles.css --use autoprefixer -d ./public_html/view/css/prefixed/ --style compressed"
+  }
+}
