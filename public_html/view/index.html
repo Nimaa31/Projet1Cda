@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+
     <title>Boulangerie</title>
 </head>
 
@@ -59,31 +61,64 @@
 
             <section id="nav-menu">
                 <ul>
+                    <i class="nav-burger fa fa-bars" id="nav-burger"></i>
                     <li><a href="./index.html" id="home-link">Accueil</a></li>
                     <li><a href="./about.html" id="about-link">À propos</a></li>
                     <li><a href="" id="contact-link">Nous contacter</a></li>
+                    
                 </ul>
-
+                
             </section>
 
         </nav>
-        <button id="about-btn">
+        <a href="./about.html" id="about-btn">
             À Propos
-        </button>
+        </a>
         <h1 id="nav-title">
-            Une boulangerie à votre service
+            Le Four Enchanté
         </h1>
     </header>
 
     <main>
-
+        <article class="article">
+            <div class="card1">
+                <div class="img-card">
+                    <img alt="img"
+                        src="https://images.squarespace-cdn.com/content/v1/557f2f57e4b0971f7f8bb446/1704308797442-WGVJTZE0ML9ECBJYDCFS/Tezza-7253.JPG?format=2500w" />
+                </div>
+                <div class="text">
+                    <h3 class="tilte-card"> Baguettes de Pain : Un Art Authentique </h3>
+                    <p>Découvrez l'authenticité de nos baguettes de pain, véritables emblèmes de notre boulangerie. Avec leur croûte dorée et croustillante et leur mie légère, nos baguettes sont confectionnées à partir des meilleurs ingrédients selon des techniques artisanales transmises de génération en génération. Chaque baguette est pétrie, façonnée et cuite avec soin pour vous offrir une expérience gustative unique. Que ce soit pour accompagner vos repas ou pour être savourées avec un simple morceau de fromage, nos baguettes sont le choix idéal pour ceux qui recherchent le goût du vrai pain, fait avec passion. Visitez notre page pour en savoir plus sur la tradition et la qualité qui se cachent derrière chaque baguette sortie de nos fours.</p>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="img-card">
+                    <img alt="img"
+                        src="https://www.boulangerielouise.com/wp-content/uploads/2017/09/BOULANGERIE-LOUISE_CROISSANT-AMBIANCE_2-scaled.jpg" />
+                </div>
+                <div class="text">
+                    <h3 class="tilte-card"> Croissant - Légèreté et Saveur </h3>
+                    <p>Laissez-vous tenter par nos délicieux pains au chocolat, un incontournable de la pâtisserie française. Confectionnés avec une pâte feuilletée au beurre d'une finesse incomparable, nos pains au chocolat renferment deux barres de chocolat fondant qui fondent littéralement en bouche. Chaque bouchée est une alliance parfaite de croustillant et de douceur, idéale pour un petit-déjeuner gourmand ou une pause sucrée dans la journée. Découvrez un plaisir simple mais exquis dans chaque pain au chocolat, fabriqué avec soin par nos artisans pour une expérience inoubliable.</p>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="img-card">
+                    <img alt="img"
+                        src="https://www.paul.fr/media/catalog/product/1/_/1_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" />
+                </div>
+                <div class="text">
+                    <h3 class="tilte-card"> Pain au Chocolat - Un Éveil Gourmand </h3>
+                    <p>Découvrez nos croissants, chefs-d'œuvre de légèreté et de saveur. Fabriqués avec une pâte feuilletée au beurre pur, nos croissants sont dorés à la perfection, leur croûte croustillante enveloppant une mie tendre et aérée. Chaque croissant est le résultat d'un savoir-faire artisanal, préparé avec soin pour garantir ce goût authentique et savoureux que vous adorez. Parfaits pour un petit-déjeuner raffiné ou une gourmandise à tout moment de la journée, nos croissants sont une invitation irrésistible à la douceur. Plongez dans l'univers du vrai croissant français et savourez un moment de pure indulgence.</p>
+                </div>
+            </div>
+        </article>
 
 
 
         <form action="">
-            <input type="text" id="input1-contact-form">
-            <input type="text" id="input2-contact-form">
-            <textarea type="text" id="textarea-contact-form"></textarea>
+            <input type="text" id="input1-contact-form" placeholder="Email">
+            <input type="text" id="input2-contact-form" placeholder="Sujet">
+            <textarea type="text" id="textarea-contact-form" placeholder="Message"></textarea>
             <div class="submit-container">
                 <input type="submit" id="submit-contact-form" value="Envoyer">
             </div>
@@ -141,6 +176,7 @@
             <h2>18 Rue du croissant - Autriche - 01683</h2>
         </section>
     </footer>
+    <script src = "js/navbar.js"></script>
 </body>
 
 </html>

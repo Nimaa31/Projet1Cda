@@ -1,4 +1,7 @@
 main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     padding: 50px 99px 50px 99px;
 
     form {
@@ -14,6 +17,21 @@ main {
             padding: 10px;
             border-radius: 10px;
             background-color: #F3E9DC;
+            outline: none;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            color: rgba($color: #000000, $alpha: 1);
+
+            &::placeholder {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 20px;
+                color: rgba($color: #000000, $alpha: 0.25);
+            }
+
         }
 
         textarea {
@@ -21,6 +39,21 @@ main {
             border: none;
             border-radius: 20px;
             background-color: #F3E9DC;
+            outline: none;
+            padding: 10px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 20px;
+            color: rgba($color: #000000, $alpha: 1);
+
+            &::placeholder {
+                font-family: "Roboto", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 20px;
+                color: rgba($color: #000000, $alpha: 0.25);
+            }
 
         }
 
@@ -41,10 +74,98 @@ main {
                 font-style: normal;
                 color: #F3E9DC;
                 box-shadow: 0 0 10px #000000;
-                &:hover{
-                    transform : scale(1.05)
+
+                &:hover {
+                    transform: scale(1.05)
                 }
             }
         }
     }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card-about {
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        gap: 10px;
+    }
+
+    
+
+    .img-card img {
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .text {
+        flex: 1
+    }
+
+    .tilte-card {
+        font-size: 32px;
+        font-weight: bold;
+        font-family: "Noto Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        color: #F3E9DC;
+    }
+
+    p {
+        color: #000000;
+        /* Couleur plus claire pour le paragraphe */
+        font-size: 20px;
+        line-height: 1.8;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        margin-top: 50px;
+        text-align: justify;
+        text-shadow: 0 0 1px #000000;
+    }
 }
+@media screen and (min-width: 951px) {
+    .card2{
+        flex-direction: row-reverse;
+    }
+}
+@media screen and (max-width : 950px) {
+
+    main{
+        padding: 50px 20px 50px 20px;
+    }
+}
+@media screen and (max-width : 1300px) {
+
+    .card1,
+    .card2,
+    .card3,
+    .card-about {
+        flex-direction: column;
+        .img-card img {
+            width: 500px;
+            height: 500px;
+           
+        }
+    }
+
+    .card2{
+        align-items: flex-end;
+        .text{
+            text-align: end;
+        }
+    }
+}
+

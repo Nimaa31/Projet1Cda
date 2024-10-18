@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="./css/styles.css">
     <title>Boulangerie</title>
 </head>
@@ -59,11 +61,12 @@
 
             <section id="nav-menu">
                 <ul>
+                    <i class="nav-burger fa fa-bars" id="nav-burger"></i>
                     <li><a href="./index.html" id="home-link">Accueil</a></li>
                     <li><a href="./about.html" id="about-link">À propos</a></li>
-                    <li><a href="./index.html" id="contact-link">Nous contacter</a></li>
+                    <li><a href="" id="contact-link">Nous contacter</a></li>
                 </ul>
-
+                
             </section>
 
         </nav>
@@ -74,7 +77,19 @@
     </header>
 
     <main>
-        
+        <article class="article">
+            <div class="card-about">
+                <div class="img-card">
+                    <img alt="img"
+                        src="https://www.boulangeriemarionromain.fr/wp-content/uploads/2022/04/pains-francais-2128535.jpg" />
+                </div>
+                <div class="text">
+                    <h3 class="tilte-card"> Qui Somme nous </h3>
+                    <p>Bienvenue dans notre boulangerie, où chaque jour est une célébration de la tradition boulangère à travers nos baguettes, croissants et pains au chocolat artisanaux. Nos baguettes, croustillantes à l'extérieur et tendres à l'intérieur, sont le résultat d'un savoir-faire authentique, parfaites pour sublimer vos repas ou être dégustées nature. Nos croissants, feuilletés et dorés à la perfection, fondent en bouche et offrent un délice incomparable au petit-déjeuner. Quant à nos pains au chocolat, ils cachent sous leur croûte dorée deux barres de chocolat fondant qui feront le bonheur des gourmands. Venez découvrir ces délices dans notre boulangerie, où chaque bouchée est un voyage au cœur de la tradition et de la gourmandise.</p>
+                </div>
+            </div>
+           
+        </article>
     </main>
 
     <footer>
@@ -128,6 +143,7 @@
             <h2>18 Rue du croissant - Autriche - 01683</h2>
         </section>
     </footer>
+    <script src = "js/navbar.js"></script>
 </body>
 
 </html>
