@@ -155,8 +155,9 @@ main {
     .card-about {
         flex-direction: column;
         .img-card img {
-            width: 500px;
-            height: 500px;
+            width: 80vw;
+            height: 50vh;
+            border-radius: 20px;
            
         }
     }
