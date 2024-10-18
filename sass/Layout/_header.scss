@@ -3,7 +3,6 @@ header {
     flex-direction: column;
     padding: 10px;
     height: 500px;
-    width: 100vw;
 
     background-image: url('https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/27220/f1-BOULANGERIE-PATISSERIE-GRIMAL.jpg');
     background-size: cover;
@@ -20,8 +19,8 @@ header {
         border-radius: 20px;
         background-color: rgba(#F3E9DC, 0.9);
         align-items: center;
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 99px;
+        padding-right: 99px;
 
         #logo {
             svg {

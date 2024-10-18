@@ -1,0 +1,50 @@
+main {
+    padding: 50px 99px 50px 99px;
+
+    form {
+        background-color: rgba(#F3E9DC, 0.5);
+        border-radius: 20px;
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        gap: 18px;
+
+        input {
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #F3E9DC;
+        }
+
+        textarea {
+            height: 307px;
+            border: none;
+            border-radius: 20px;
+            background-color: #F3E9DC;
+
+        }
+
+        .submit-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            input[type="submit"] {
+                transition: transform 0.5s ease;
+                width: 375px;
+                height: 62px;
+                background-color: rgba(#290102, 0.9);
+                font-size: 30px;
+                font-family: "Noto Serif", serif;
+                font-weight: 700;
+                font-style: normal;
+                color: #F3E9DC;
+                box-shadow: 0 0 10px #000000;
+                &:hover{
+                    transform : scale(1.05)
+                }
+            }
+        }
+    }
+}
