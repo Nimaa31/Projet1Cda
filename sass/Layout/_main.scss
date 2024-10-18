@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.img-card img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.text {
+    padding: 20px;  
+    flex: 1; 
+}
+
+.tilte-card {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 15px;
+    color: #F3E9DC; 
+}
+
+p {
+    color: #000000; /* Couleur plus claire pour le paragraphe */
+    font-size: 25px;
+    line-height: 1.8;
+    font-family: "Roboto", sans-serif;
+    margin-top: 50px;
+    text-align: justify;
+}
