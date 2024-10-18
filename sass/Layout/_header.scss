@@ -45,6 +45,8 @@ header {
 
 
                 li {
+                    transition: transform 0.5s ease;
+
                     a {
                         color: black;
                         text-decoration: none;
@@ -53,6 +55,11 @@ header {
                         font-weight: 400;
                         font-style: normal;
                     }
+
+                    &:hover{
+                        transform: scale(1.1);
+
+                    }
                 }
             }
         }
@@ -60,6 +67,7 @@ header {
     }
 
     #about-btn {
+        transition: transform 0.5s ease;
         width: 280px;
         height: 80px;
         margin-top: 100px;
@@ -73,7 +81,14 @@ header {
         font-style: normal;
         color: #F3E9DC;
         cursor: pointer;
+<<<<<<< HEAD
+=======
+        &:hover{
+            transform: scale(1.1);
+        }
+>>>>>>> 718958879f16c623954ef70c0e1abc7cbee03b6a
     }
+
 
     #nav-title {
         display: flex;
