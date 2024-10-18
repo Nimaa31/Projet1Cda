@@ -8,7 +8,7 @@ Précision SASS :
 
 Il peut arriver que le fichier style.css soit déféctueux. 
 Dans le cas où cela arrive il est nécéssaire de le supprimer et de lancer la commande suivant à la racine du projet (là où ce trouve le répertoire SASS : 
-- npm run build-css
+- npm run build-css  
 Il s'agit d'un script ajouter dans le fichier package.json qui execute ce qui est nécéssaire pour la génération et compression du fichier css 
 
 👥 Collaborateurs
